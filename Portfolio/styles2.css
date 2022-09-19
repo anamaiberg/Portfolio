@@ -1,0 +1,137 @@
+
+ body{
+  background-color: rgb(236, 236, 236);
+  padding: 0;
+  margin: 0;
+ }
+
+.hotbar{
+  display: flex;
+  justify-content: end;
+  background: #c1c1ebe0; 
+}
+
+body .hotbar a:hover{
+  color: rgba(170, 14, 157, 0.986);
+  transition: 0s;
+
+}
+
+.hotbar a{
+  margin: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Andale Mono, monospace;
+  border: rgb(212, 212, 212) solid 5px;
+  background: rgb(212, 212, 212);
+  border-radius: 45px;
+  color: #fff;
+
+}
+
+
+ .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  height:250px;
+  margin:auto;
+  background: #c1c1ebe0;
+  font-family: Andale Mono, monospace;
+  color:#fff; 
+  font-size: 50px;
+ }
+
+ .texto1{
+  text-align: center;
+  font-family: Andale Mono, monospace;
+  font-size: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+ }
+
+.top2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:99vw;
+  height:250px;
+  margin:auto;
+  background: #c1c1ebe0;
+  font-family: Andale Mono, monospace;
+  color:#fff; 
+  font-size: 50px;
+}
+
+.texto2{
+  text-align: center;
+  font-family: Andale Mono, monospace;
+  font-size: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.eu{
+  display: flex;
+  justify-content: center;
+
+}
+.eu img{
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border: 3px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 150px;
+}
+
+.projetos{
+  
+}
+
+.calc{
+  display: flex;
+}
+
+.calc img{
+  width: 230px;
+  height: 380px;
+
+}
+
+.soon{
+  display: flex;
+}
+
+.soon img{
+  width: 540px;
+  height: 300px;
+  
+}
+
+.soon_img{
+  border-top: 2px solid #000;
+  margin: 20px;
+}
+
+.midia img{
+  width: 50px;
+  height: 50px;
+}
+
+.midia{
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  width: 450px;
+  height: 150px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
