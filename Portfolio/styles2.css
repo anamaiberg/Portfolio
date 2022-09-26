@@ -88,11 +88,8 @@ body .hotbar a:hover{
 }
 
 .projetos{
-  
-}
-
-.calc{
   display: flex;
+  justify-content: center;
 }
 
 .calc img{
@@ -101,19 +98,10 @@ body .hotbar a:hover{
 
 }
 
-.soon{
-  display: flex;
-}
-
 .soon img{
   width: 540px;
   height: 300px;
-  
-}
-
-.soon_img{
-  border-top: 2px solid #000;
-  margin: 20px;
+  margin-left: 30px;
 }
 
 .midia img{
