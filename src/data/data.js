@@ -1,136 +1,85 @@
-// ============================================================
-//  DADOS PESSOAIS — edite este arquivo com suas informações
-// ============================================================
-
 export const personal = {
-  name: "Seu Nome Aqui",
-  title: "Desenvolvedor Full Stack",
-  bio: "Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSC. Apaixonado por criar soluções web modernas, com foco em React.js e Node.js. Buscando minha primeira oportunidade profissional na área.",
+  name: "Ana Clara Maiberg",
+  title: "Analista de Mídias Pagas Internacional",
+  bio: "Estudante de Tecnologia em Análise e Desenvolvimento de Sistemas no IFSC. Inglês fluente.",
   location: "Blumenau, SC — Brasil",
-  email: "seuemail@email.com",
-  github: "https://github.com/seu-usuario",
-  linkedin: "https://linkedin.com/in/seu-usuario",
-  // URL da sua foto (pode ser do GitHub ou outro serviço de imagem)
-  avatar: "https://avatars.githubusercontent.com/u/0",
-  // Coloque o arquivo do currículo em /public/curriculo.pdf
+  email: "ana.maibergx@gmail.com",
+  github: "https://github.com/anamaiberg",
+  linkedin: "https://linkedin.com/in/ana-clara-maiberg",
+  avatar: "https://www.linkedin.com/in/ana-clara-maiberg/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAj4qH%2FWYSH%2BJWteb6y0IAA%3D%3D",
   curriculoPdf: "/curriculo.pdf",
 };
 
-export const skills = [
-  { name: "React.js",     icon: "⚛️",  level: 70, category: "Frontend" },
-  { name: "JavaScript",   icon: "🟨",  level: 75, category: "Frontend" },
-  { name: "HTML & CSS",   icon: "🎨",  level: 85, category: "Frontend" },
-  { name: "Bootstrap",    icon: "💜",  level: 70, category: "Frontend" },
-  { name: "Node.js",      icon: "🟢",  level: 55, category: "Backend"  },
-  { name: "Python",       icon: "🐍",  level: 60, category: "Backend"  },
-  { name: "Git & GitHub", icon: "🐙",  level: 70, category: "Ferramentas" },
-  { name: "SQL",          icon: "🗄️",  level: 50, category: "Banco de Dados" },
-];
-
 export const experiences = [
   {
-    role: "Estagiário de Desenvolvimento Web",
-    company: "Nome da Empresa",
-    period: "Jan 2024 — Presente",
-    description: "Desenvolvimento e manutenção de aplicações web usando React e Node.js.",
-    bullets: [
-      "Implementação de novas funcionalidades no frontend com React.js",
-      "Integração de APIs REST no painel administrativo",
-      "Redução de 30% no tempo de carregamento com otimizações de performance",
-    ],
+    role: "Analista de QA",
+    company: "Pilar Sistemas",
+    period: "Jul 2024 — Set 2025",
+    description: "Analista de QA com foco em testes manuais de sistemas web e desktop. Responsável pela criação de casos de teste, documentação, manuais ao cliente e apoio ao time de desenvolvimento. Iniciei a estruturação da área de QA e a implementação de testes automatizados com Playwright e Python.",
   },
-  // Adicione mais experiências ou remova esta se não tiver
 ];
 
 export const education = [
   {
     degree: "Tecnologia em Análise e Desenvolvimento de Sistemas",
     institution: "Instituto Federal de Santa Catarina — IFSC",
-    period: "2022 — 2025",
-    description: "Formação em desenvolvimento de sistemas, banco de dados, engenharia de software e IHC.",
-  },
-  {
-    degree: "Ensino Médio",
-    institution: "Nome da Escola",
-    period: "2019 — 2021",
-    description: "",
+    period: "2024 — 2026",
   },
 ];
 
 export const certifications = [
-  { name: "React — Curso Completo",     issuer: "Udemy",      year: "2024" },
-  { name: "JavaScript Moderno (ES6+)",  issuer: "Rocketseat", year: "2023" },
+  { name: "Programação em Python",     issuer: "Entra21 (Proway)",      year: "480h (2022)" },
+  { name: "Teste de Software Manual: Do Planejamento à Execução ",  issuer: "Qualiters Club - Udemy", year: "17h 45min (2024)" },
+  { name: "7° Maratona de CiberEducação: Introdução à Cibersegurança",  issuer: "Cisco Networking Academy", year: "27h (2023)" },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Projeto 1",
-    description: "Breve descrição do projeto: o que ele faz, quais tecnologias foram usadas e qual problema resolve.",
-    tags: ["React", "Node.js", "MongoDB"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+1",
-    repo: "https://github.com/seu-usuario/projeto-1",
-    live: "",
-    pdf: "",
+    title: "Mamba Searcher",
+    description: "O projeto Mamba consiste em um website feito em Django que age como um 'super buscador' de currículos, filtrando-os conforme a necessidade da vaga de determinada empresa.",
+    tags: ["Python"],
+    image: "https://user-images.githubusercontent.com/107778041/197628931-b2a7a572-ec8f-472e-bf4d-8461fd789c8f.png",
+    repo: "https://github.com/anamaiberg/mamba-searcher",
   },
   {
     id: 2,
-    title: "Projeto 2",
-    description: "Breve descrição do segundo projeto. Detalhe as funcionalidades principais e o aprendizado obtido.",
-    tags: ["Python", "Django", "PostgreSQL"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+2",
-    repo: "https://github.com/seu-usuario/projeto-2",
-    live: "https://seu-projeto.vercel.app",
-    pdf: "",
+    title: "Bloco de Notas",
+    description: "",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "https://www.andypresentes.com.br/papelaria/bloco-destacavel-notas-c30fls-rosa?srsltid=AfmBOopERfQRPnwOvcfGUiRGQ03Ko6NyumQ4WOdikZ8Z135vmKd5Dz0U,
+    repo: "https://github.com/anamaiberg/Bloco-de-Notas-Projeto-",
   },
   {
     id: 3,
-    title: "Projeto 3",
-    description: "Descrição do terceiro projeto. O que foi desenvolvido, por que e quais foram os desafios.",
+    title: "Calculadora",
+    description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+3",
-    repo: "",
-    live: "",
-    pdf: "",
+    image: "https://www.papelariatoledo.com.br/calculadora-de-mesa-12-dig-rosa-neo-solar-leonora-unidade?srsltid=AfmBOor-EEfHguv4HJXkUgfPObn6qlQh_uHDG0F8rRVgeZ2cYprkDA-e",
+    repo: "https://github.com/anamaiberg/Calculadora-Projeto-",
   },
   {
     id: 4,
-    title: "Projeto 4",
-    description: "Mais um projeto do portfólio. Detalhe as principais funcionalidades e tecnologias utilizadas.",
-    tags: ["React", "Firebase"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+4",
-    repo: "https://github.com/seu-usuario/projeto-4",
-    live: "",
-    pdf: "",
+    title: "Buscador de Filmes",
+    description: "",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "https://www.techtudo.com.br/dicas-e-tutoriais/2019/09/melhores-filmes-da-netflix-em-2019-como-encontrar-videos-para-assistir.ghtml",
+    repo: "https://github.com/anamaiberg/Buscador-de-Filmes-Projeto-",
   },
   {
     id: 5,
-    title: "Projeto 5",
-    description: "Descreva aqui o que foi desenvolvido neste projeto e o que aprendeu com ele.",
-    tags: ["Vue.js", "Tailwind"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+5",
-    repo: "",
-    live: "",
-    pdf: "",
+    title: "Cronômetro",
+    description: "",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "https://www.amazon.com.br/Cron%C3%B4metro-Lembrete-Contagem-Regressiva-Aplicabilidade/dp/B0BWYJ7LWC",
+    repo: "https://github.com/anamaiberg/Cronometro-Projeto-",
   },
   {
     id: 6,
-    title: "Projeto 6",
-    description: "Último projeto do portfólio. Você pode adicionar quantos quiser no array projects.",
-    tags: ["React Native"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+6",
-    repo: "https://github.com/seu-usuario/projeto-6",
-    live: "",
-    pdf: "",
-  },
-  {
-    id: 7,
-    title: "Projeto 7",
-    description: "Sétimo projeto para demonstrar a paginação funcionando na página de portfólio.",
-    tags: ["TypeScript", "Next.js"],
-    image: "https://placehold.co/600x340/212529/6366f1?text=Projeto+7",
-    repo: "",
-    live: "",
-    pdf: "",
+    title: "GatoLock",
+    description: "",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "https://pt.wikipedia.org/wiki/Gato_preto",
+    repo: "https://github.com/anamaiberg/GatoLock-PCD",
   },
 ];

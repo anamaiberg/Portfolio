@@ -5,7 +5,7 @@ import { personal } from '../data/data';
 const App = () => {
   return (
     <>
-      {/* ── NAVBAR ─────────────────────────────────────────── */}
+      {/*NAVBAR*/}
       <Navbar bg="primary" variant="dark" expand="md" sticky="top">
         <Container>
           <Navbar.Brand as={NavLink} to="/">
@@ -28,14 +28,14 @@ const App = () => {
         </Container>
       </Navbar>
 
-      {/* ── CONTEÚDO DAS PÁGINAS ───────────────────────────── */}
+      {/*CONTEÚDO DAS PÁGINAS*/}
       <main>
         <Outlet />
       </main>
 
-      {/* ── FOOTER ─────────────────────────────────────────── */}
+      {/*FOOTER*/}
       <footer className="bg-dark text-white text-center py-3 mt-5">
-        <small>© {new Date().getFullYear()} {personal.name} — Feito com React.js + Bootstrap</small>
+        <small>© {"2026"} {personal.name}</small>
       </footer>
     </>
   );

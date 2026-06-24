@@ -95,22 +95,3 @@ portfolio/
 ├── vite.config.js          ← Configure REPO_NAME aqui
 └── package.json
 ```
-
----
-
-## ✅ Requisitos atendidos
-
-- [x] Vite + React 19 + Bootstrap 5 (mesmo stack do professor)
-- [x] `createBrowserRouter` + `RouterProvider` (mesmo padrão do modelo)
-- [x] `basename: import.meta.env.BASE_URL` (deploy correto no GitHub Pages)
-- [x] Página de apresentação com foto e descrição
-- [x] Lista de habilidades com ícones e barra de nível
-- [x] Seção de contato com links e formulário
-- [x] Currículo profissional com timeline
-- [x] Formação acadêmica com timeline
-- [x] Cursos e certificações
-- [x] Portfólio com imagens, descrições e links
-- [x] Lazy-load nas imagens do portfólio
-- [x] Paginação no portfólio (componente `<Pagination>` do React-Bootstrap)
-- [x] Responsivo para mobile (grid do Bootstrap)
-- [x] Deploy via `npm run deploy` no GitHub Pages
