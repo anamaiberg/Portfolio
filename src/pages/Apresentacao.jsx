@@ -5,12 +5,6 @@ import {
 } from 'react-bootstrap';
 import { personal } from '../data/data';
 
-// Agrupa skills por categoria
-const grouped = skills.reduce((acc, s) => {
-  acc[s.category] = acc[s.category] ? [...acc[s.category], s] : [s];
-  return acc;
-}, {});
-
 // ── Formulário de contato ──────────────────────────────────
 function ContatoForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
