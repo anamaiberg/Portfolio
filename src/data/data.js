@@ -7,10 +7,16 @@ export const personal = {
   github: "https://github.com/anamaiberg",
   linkedin: "https://linkedin.com/in/ana-clara-maiberg",
   avatar: "https://github.com/anamaiberg.png",
-  curriculoPdf: "/curriculo.pdf",
+  curriculoPdf: `${import.meta.env.BASE_URL}curriculo.pdf`,
 };
 
 export const experiences = [
+  {
+    role: "Analista de Mídias Pagas Internacional",
+    company: "Monks",
+    period: "Mar 2026 — Atual",
+    description: "Analista de Mídias Pagas Internacional responsável pela criação de anúncios e análises de mídia.",
+  },
   {
     role: "Analista de QA",
     company: "Pilar Sistemas",
@@ -39,7 +45,7 @@ export const projects = [
     title: "Mamba Searcher",
     description: "O projeto Mamba consiste em um website feito em Django que age como um 'super buscador' de currículos, filtrando-os conforme a necessidade da vaga de determinada empresa.",
     tags: ["Python"],
-    image: "https://user-images.githubusercontent.com/107778041/197628931-b2a7a572-ec8f-472e-bf4d-8461fd789c8f.png",
+    image: `${import.meta.env.BASE_URL}images/mamba.png`,
     repo: "https://github.com/anamaiberg/mamba-searcher",
   },
   {
@@ -47,7 +53,7 @@ export const projects = [
     title: "Bloco de Notas",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://www.andypresentes.com.br/papelaria/bloco-destacavel-notas-c30fls-rosa?srsltid=AfmBOopERfQRPnwOvcfGUiRGQ03Ko6NyumQ4WOdikZ8Z135vmKd5Dz0U",
+    image: `${import.meta.env.BASE_URL}images/notes.webp`,
     repo: "https://github.com/anamaiberg/Bloco-de-Notas-Projeto-",
   },
   {
@@ -55,7 +61,7 @@ export const projects = [
     title: "Calculadora",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://www.papelariatoledo.com.br/calculadora-de-mesa-12-dig-rosa-neo-solar-leonora-unidade?srsltid=AfmBOor-EEfHguv4HJXkUgfPObn6qlQh_uHDG0F8rRVgeZ2cYprkDA-e",
+    image: `${import.meta.env.BASE_URL}images/calc.webp`,
     repo: "https://github.com/anamaiberg/Calculadora-Projeto-",
   },
   {
@@ -63,7 +69,7 @@ export const projects = [
     title: "Buscador de Filmes",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://www.techtudo.com.br/dicas-e-tutoriais/2019/09/melhores-filmes-da-netflix-em-2019-como-encontrar-videos-para-assistir.ghtml",
+    image: "${import.meta.env.BASE_URL}images/search.jpg",
     repo: "https://github.com/anamaiberg/Buscador-de-Filmes-Projeto-",
   },
   {
@@ -71,7 +77,7 @@ export const projects = [
     title: "Cronômetro",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://www.amazon.com.br/Cron%C3%B4metro-Lembrete-Contagem-Regressiva-Aplicabilidade/dp/B0BWYJ7LWC",
+    image: "${import.meta.env.BASE_URL}images/cronometro.jpeg",
     repo: "https://github.com/anamaiberg/Cronometro-Projeto-",
   },
   {
@@ -79,7 +85,7 @@ export const projects = [
     title: "GatoLock",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://pt.wikipedia.org/wiki/Gato_preto",
+    image: "${import.meta.env.BASE_URL}images/gato.jpeg",
     repo: "https://github.com/anamaiberg/GatoLock-PCD",
   },
 ];

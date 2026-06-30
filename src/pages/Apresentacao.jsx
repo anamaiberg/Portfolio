@@ -5,74 +5,6 @@ import {
 } from 'react-bootstrap';
 import { personal } from '../data/data';
 
-// ── Formulário de contato ──────────────────────────────────
-function ContatoForm() {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [enviado, setEnviado] = useState(false);
-
-  function handleChange(e) {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  }
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    const subject = encodeURIComponent(`Contato via portfólio — ${form.name}`);
-    const body    = encodeURIComponent(`Nome: ${form.name}\nE-mail: ${form.email}\n\n${form.message}`);
-    window.open(`mailto:${personal.email}?subject=${subject}&body=${body}`);
-    setEnviado(true);
-    setTimeout(() => setEnviado(false), 5000);
-  }
-
-  return (
-    <Form onSubmit={handleSubmit}>
-      {enviado && (
-        <Alert variant="success" onClose={() => setEnviado(false)} dismissible>
-          Seu cliente de e-mail foi aberto com a mensagem preenchida!
-        </Alert>
-      )}
-      <Row className="mb-3">
-        <Col md={6} className="mb-3 mb-md-0">
-          <Form.Label>Nome</Form.Label>
-          <Form.Control
-            required
-            name="name"
-            type="text"
-            placeholder="Seu nome"
-            value={form.name}
-            onChange={handleChange}
-          />
-        </Col>
-        <Col md={6}>
-          <Form.Label>E-mail</Form.Label>
-          <Form.Control
-            required
-            name="email"
-            type="email"
-            placeholder="seu@email.com"
-            value={form.email}
-            onChange={handleChange}
-          />
-        </Col>
-      </Row>
-      <Form.Group className="mb-3">
-        <Form.Label>Mensagem</Form.Label>
-        <Form.Control
-          required
-          as="textarea"
-          name="message"
-          rows={5}
-          placeholder="Como posso te ajudar?"
-          value={form.message}
-          onChange={handleChange}
-        />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Enviar mensagem
-      </Button>
-    </Form>
-  );
-}
-
 // ── Página principal ───────────────────────────────────────
 const Apresentacao = () => {
   return (
@@ -129,38 +61,6 @@ const Apresentacao = () => {
         </Col>
       </Row>
 
-      {/* ── HABILIDADES ───────────────────────────────────── */}
-      <section className="mb-5">
-        <h2 className="h3 fw-bold mb-4">🛠️ Tecnologias & Habilidades</h2>
-        {Object.entries(grouped).map(([category, items]) => (
-          <div key={category} className="mb-4">
-            <h3 className="h6 text-muted text-uppercase mb-3">{category}</h3>
-            <Row xs={1} sm={2} lg={4} className="g-3">
-              {items.map(skill => (
-                <Col key={skill.name}>
-                  <Card className="h-100 shadow-sm">
-                    <Card.Body>
-                      <div className="d-flex align-items-center gap-2 mb-2">
-                        <span style={{ fontSize: '1.5rem' }}>{skill.icon}</span>
-                        <span className="fw-medium">{skill.name}</span>
-                      </div>
-                      <div className="skill-bar">
-                        <div
-                          className="skill-bar-fill"
-                          style={{ width: `${skill.level}%` }}
-                        />
-                      </div>
-                      <small className="text-muted d-block text-end mt-1">
-                        {skill.level}%
-                      </small>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-          </div>
-        ))}
-      </section>
 
       {/* ── CONTATO ───────────────────────────────────────── */}
       <section>
@@ -206,13 +106,6 @@ const Apresentacao = () => {
           </Col>
         </Row>
 
-        {/* Formulário */}
-        <Card className="shadow-sm">
-          <Card.Body className="p-4">
-            <Card.Title className="mb-4">Enviar mensagem</Card.Title>
-            <ContatoForm />
-          </Card.Body>
-        </Card>
       </section>
     </Container>
   );
