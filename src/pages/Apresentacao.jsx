@@ -3,7 +3,7 @@ import {
   Container, Row, Col, Image, Badge, Card,
   Form, Button, Alert,
 } from 'react-bootstrap';
-import { personal, skills } from '../data/data';
+import { personal } from '../data/data';
 
 // Agrupa skills por categoria
 const grouped = skills.reduce((acc, s) => {

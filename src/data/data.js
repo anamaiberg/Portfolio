@@ -6,7 +6,7 @@ export const personal = {
   email: "ana.maibergx@gmail.com",
   github: "https://github.com/anamaiberg",
   linkedin: "https://linkedin.com/in/ana-clara-maiberg",
-  avatar: "https://www.linkedin.com/in/ana-clara-maiberg/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAj4qH%2FWYSH%2BJWteb6y0IAA%3D%3D",
+  avatar: "https://github.com/anamaiberg.png",
   curriculoPdf: "/curriculo.pdf",
 };
 
@@ -47,7 +47,7 @@ export const projects = [
     title: "Bloco de Notas",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://www.andypresentes.com.br/papelaria/bloco-destacavel-notas-c30fls-rosa?srsltid=AfmBOopERfQRPnwOvcfGUiRGQ03Ko6NyumQ4WOdikZ8Z135vmKd5Dz0U,
+    image: "https://www.andypresentes.com.br/papelaria/bloco-destacavel-notas-c30fls-rosa?srsltid=AfmBOopERfQRPnwOvcfGUiRGQ03Ko6NyumQ4WOdikZ8Z135vmKd5Dz0U",
     repo: "https://github.com/anamaiberg/Bloco-de-Notas-Projeto-",
   },
   {
