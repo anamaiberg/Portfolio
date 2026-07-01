@@ -10,6 +10,17 @@ export const personal = {
   curriculoPdf: `${import.meta.env.BASE_URL}curriculo.pdf`,
 };
 
+export const skills = [
+  { name: "React.js",     icon: "⚛️",  level: 70, category: "Frontend" },
+  { name: "JavaScript",   icon: "🟨",  level: 75, category: "Frontend" },
+  { name: "HTML & CSS",   icon: "🎨",  level: 85, category: "Frontend" },
+  { name: "Bootstrap",    icon: "💜",  level: 70, category: "Frontend" },
+  { name: "Node.js",      icon: "🟢",  level: 55, category: "Backend"  },
+  { name: "Python",       icon: "🐍",  level: 60, category: "Backend"  },
+  { name: "Git & GitHub", icon: "🐙",  level: 70, category: "Ferramentas" },
+  { name: "SQL",          icon: "🗄️",  level: 50, category: "Banco de Dados" },
+];
+
 export const experiences = [
   {
     role: "Analista de Mídias Pagas Internacional",
@@ -45,7 +56,7 @@ export const projects = [
     title: "Mamba Searcher",
     description: "O projeto Mamba consiste em um website feito em Django que age como um 'super buscador' de currículos, filtrando-os conforme a necessidade da vaga de determinada empresa.",
     tags: ["Python"],
-    image: `${import.meta.env.BASE_URL}images/mamba.png`,
+    image: `${import.meta.env.BASE_URL}images/logo.png`,
     repo: "https://github.com/anamaiberg/mamba-searcher",
   },
   {
@@ -53,7 +64,7 @@ export const projects = [
     title: "Bloco de Notas",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/notes.webp`,
+    image: `${import.meta.env.BASE_URL}images/logo.png`,
     repo: "https://github.com/anamaiberg/Bloco-de-Notas-Projeto-",
   },
   {
@@ -61,7 +72,7 @@ export const projects = [
     title: "Calculadora",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/calc.webp`,
+    image: `${import.meta.env.BASE_URL}images/logo.png`,
     repo: "https://github.com/anamaiberg/Calculadora-Projeto-",
   },
   {
@@ -69,7 +80,7 @@ export const projects = [
     title: "Buscador de Filmes",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "${import.meta.env.BASE_URL}images/search.jpg",
+    image: `${import.meta.env.BASE_URL}images/logo.png`,
     repo: "https://github.com/anamaiberg/Buscador-de-Filmes-Projeto-",
   },
   {
@@ -77,7 +88,7 @@ export const projects = [
     title: "Cronômetro",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "${import.meta.env.BASE_URL}images/cronometro.jpeg",
+    image: `${import.meta.env.BASE_URL}images/logo.png`,
     repo: "https://github.com/anamaiberg/Cronometro-Projeto-",
   },
   {
@@ -85,7 +96,7 @@ export const projects = [
     title: "GatoLock",
     description: "",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "${import.meta.env.BASE_URL}images/gato.jpeg",
+    image: `${import.meta.env.BASE_URL}images/logo.png`,
     repo: "https://github.com/anamaiberg/GatoLock-PCD",
   },
 ];

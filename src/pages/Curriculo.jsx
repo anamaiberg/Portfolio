@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 import { personal, experiences, education, certifications } from '../data/data';
 
-// ── Item de timeline ───────────────────────────────────────
+// Item de timeline
 function TimelineItem({ title, subtitle, period, description, bullets }) {
   return (
     <div className="timeline-item">
@@ -29,7 +29,7 @@ function TimelineItem({ title, subtitle, period, description, bullets }) {
   );
 }
 
-// ── Página currículo ───────────────────────────────────────
+// Página currículo 
 const Curriculo = () => {
   return (
     <Container className="py-5">
@@ -52,7 +52,7 @@ const Curriculo = () => {
         </Col>
       </Row>
 
-      {/* ── EXPERIÊNCIA PROFISSIONAL ─────────────────────── */}
+      {/* EXPERIÊNCIA PROFISSIONAL */}
       <section className="mb-5">
         <h2 className="h4 fw-bold mb-4">💼 Experiência Profissional</h2>
         {experiences.length > 0 ? (
@@ -76,7 +76,7 @@ const Curriculo = () => {
         )}
       </section>
 
-      {/* ── FORMAÇÃO ACADÊMICA ───────────────────────────── */}
+      {/* FORMAÇÃO ACADÊMICA */}
       <section className="mb-5">
         <h2 className="h4 fw-bold mb-4">🎓 Formação Acadêmica</h2>
         {education.map((edu, i) => (
@@ -90,7 +90,7 @@ const Curriculo = () => {
         ))}
       </section>
 
-      {/* ── CURSOS & CERTIFICAÇÕES ───────────────────────── */}
+      {/* CURSOS & CERTIFICAÇÕES */}
       <section>
         <h2 className="h4 fw-bold mb-4">🏆 Cursos & Certificações</h2>
         <Row xs={1} sm={2} lg={3} className="g-3">

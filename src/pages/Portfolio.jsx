@@ -7,32 +7,39 @@ import { projects } from '../data/data';
 
 const PER_PAGE = 6;
 
-// ── Card de projeto com lazy-load ──────────────────────────
+// Card de projeto
 function ProjectCard({ project }) {
   const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState(false);
 
   return (
     <Card className="h-100 shadow-sm overflow-hidden">
-      {/* Imagem com lazy-load */}
       <div
         style={{
-          height: 180, background: '#e9ecef',
+          height: 180, background: '#16213e',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          overflow: 'hidden',
+          overflow: 'hidden', position: 'relative',
         }}
       >
-        {!loaded && (
+        {!loaded && !error && (
           <div className="spinner-border text-primary" role="status">
             <span className="visually-hidden">Carregando…</span>
           </div>
+        )}
+        {error && (
+          <span className="text-muted small">Imagem não encontrada</span>
         )}
         <img
           src={project.image}
           alt={project.title}
           loading="lazy"
           className="project-img"
-          style={{ display: loaded ? 'block' : 'none' }}
+          style={{
+            position: loaded ? 'static' : 'absolute',
+            opacity: loaded ? 1 : 0,
+          }}
           onLoad={() => setLoaded(true)}
+          onError={() => setError(true)}
         />
       </div>
 
@@ -95,7 +102,7 @@ function ProjectCard({ project }) {
   );
 }
 
-// ── Página portfólio ───────────────────────────────────────
+// Página portfólio 
 const Portfolio = () => {
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(projects.length / PER_PAGE);

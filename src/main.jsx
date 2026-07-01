@@ -8,9 +8,6 @@ import Apresentacao from './pages/Apresentacao.jsx';
 import Curriculo  from './pages/Curriculo.jsx';
 import Portfolio  from './pages/Portfolio.jsx';
 
-// basename usa BASE_URL do Vite:
-//   npm run dev   → "/"
-//   npm run build → "/NOME_DO_REPO" (definido em vite.config.js)
 const router = createBrowserRouter(
   [
     {
